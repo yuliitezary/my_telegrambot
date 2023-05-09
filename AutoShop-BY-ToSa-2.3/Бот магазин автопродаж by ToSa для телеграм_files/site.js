@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){WEBCASH.dataStartsWith();WEBCASH.linked_select.init(true);WEBCASH.linked_select.refresh();});

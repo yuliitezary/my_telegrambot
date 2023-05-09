@@ -1,0 +1,3 @@
+function payhidecontentUseAjaxOnClick(sender){var str=sender.data("vars");if(str.indexOf("|js_page_title=")===-1){sender.data("vars",str+"|js_page_title="+encodeURI(document.title));}
+WEBCASH.doAjax(sender);return false;}
+function payhidecontentCheckoutOnClick(sender){if(typeof sender.data("vars")!=="undefined"){return payhidecontentUseAjaxOnClick(sender);}else{var str=sender.attr("href");if(str.indexOf("&js_page_title=")===-1){sender.attr("href",str+"&js_page_title="+encodeURI(document.title));}}}

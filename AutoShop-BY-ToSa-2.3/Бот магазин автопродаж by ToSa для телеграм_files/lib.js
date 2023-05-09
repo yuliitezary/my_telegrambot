@@ -1,0 +1,2 @@
+function ShowCommentsUploader(){if($("#hidden-image-uploader").css("display")=="none"){$("#hidden-image-uploader").show('blind',{},250,function(){$('#comments-image-uploader').plupload('refresh');});}else{$("#hidden-image-uploader").hide('blind',{},250);}
+return false;};
